@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>Mr Lindstrom</title>
+        <link href = "style.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+        <link rel = "icon" href="img/icon.png">
+    </head>
+    
+    <body>
+    
+        <header>
+        <img src = "img/logo.png" alt ="Logo" class = "logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class = "home-hero">
+            <div class="container">
+                <h1 class="title">Making things look great
+                    <span>for companies who make great stuff</span>
+                </h1>
+                <a href="#portfolio" class="button button-accent">See My Work</a>
+            </div>
+        </section>
+        <div class="container" id="about">
+            <section class= "home-about">
+                <div class="home-about-textbox">
+                    <h1>Who am I</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis vel odio ac vulputate. Integer consectetur suscipit feugiat. Mauris id massa ultrices, tincidunt tellus imperdiet, convallis metus. </p>
+                    <p>Phasellus sapien quam, <strong>mollis non mollis</strong> et, vulputate a mi. Nunc cursus nisl eget ipsum sodales, nec bibendum dui placerat. Cras tincidunt rhoncus felis, at vehicula tellus venenatis quis. Sed leo eros, rhoncus vel venenatis sed, semper feugiat nibh.
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+        <section class="portfolio" id="portfolio">
+            <h1>Some of my work</h1>
+            
+            <!--Porfolio item 01-->
+            <figure class="port-item">
+                <img src="img/Webp.net-resizeimage.jpg" alt="BeerBuds">
+                <figcaption class="port-desc">
+                    <p>Project Title</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+            
+            <!--Porfolio item 02-->
+            <figure class="port-item">
+                <img src="img/Webp.net-resizeimage%20(1).jpg" alt="KTH render">
+                <figcaption class="port-desc">
+                    <p>Project Title</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+            
+            <!--Porfolio item 03-->
+            <figure class="port-item">
+                <img src="img/Webp.net-resizeimage%20(2).png" alt="UniVRse">
+                <figcaption class="port-desc">
+                    <p>Project Title</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+            
+            <!--Porfolio item 04-->
+            <figure class="port-item">
+                <img src="img/Webp.net-resizeimage%20(3).png" alt="MissionEmission">
+                <figcaption class="port-desc">
+                    <p>Project Title</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+            
+            <!--Porfolio item 05-->
+            <figure class="port-item">
+                <img src="img/Webp.net-resizeimage%20(4).png" alt="portfolio item">
+                <figcaption class="port-desc">
+                    <p>Project Title</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+            
+            <!--Porfolio item 06-->
+            <figure class="port-item">
+                <img src="img/Webp.net-resizeimage%20(5).png" alt="portfolio item">
+                <figcaption class="port-desc">
+                    <p>Project Title</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+        </section>
+        
+        <section class="cta">
+            <div class="container">
+                <h1 class="title title-cta">Like what you see?
+                    <span>Then what are you waiting for?</span>
+                </h1>
+                <a href="" class="button button-dark">Hire me</a>
+            </div>
+        </section>
+        
+        <footer id="footer">
+            <div class="container">
+                <div class="col-3">
+                    <p>
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum congue dictum risus vitae iaculis. Curabitur non mi sollicitudin, tincidunt lorem et, ullamcorper erat. Quisque fermentum condimentum maximus. Proin finibus aliquet lectus, eget finibus sem.
+                    </p>
+                </div>
+                <div class="col-1">
+                    <ul class="unstyled-list">
+                        <li><strong>Link 1</strong></li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                    </ul>
+                </div>
+                <div class="col-1">
+                <ul class="unstyled-list">
+                    <li><strong>Link 1</strong></li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                     <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+                </div>
+                <div class="col-1">
+                    <ul class="unstyled-list">
+                        <li><strong>Link 1</strong></li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script>
+
+var $root = $('html, body');
+
+$('a[href^="#"]').click(function() {
+    var href = $.attr(this, 'href');
+
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+
+    return false;
+});
+</script>
