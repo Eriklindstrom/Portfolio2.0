@@ -203,9 +203,11 @@ nav a:focus
 }
 
 @media (min-width: 60rem) {
-    .logo {
+    /*.logo {
         float:left;
-    }
+		width:6rem;
+		border-radius:50%;
+    }*/
     nav {
         float: right;
     }
@@ -214,12 +216,41 @@ nav a:focus
 /******* Home-hero *******/
 
 .home-hero {
-    background-image:url(img/hero-bg.jpg);
+    /*background-image:url(img/hero-bg.jpg);*/
     background-size:cover;
     background-position:center;
     padding:10em 0;
     color:#FFF;
 }
+
+.home-hero:after, .home-hero:before{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:"";
+    z-index:-1;
+  }
+  
+  .home-hero:after{
+    /*background:radial-gradient(circle,red,transparent);*/
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size:400%;
+    animation:colorSpin 30s linear infinite;
+  }
+  
+  .home-hero:before{
+    background-color:yellow;
+  }
+  
+  @keyframes colorSpin{
+    25%{background-position:0 100%}
+    50%{background-position:100% 100%}
+    75%{background-position:100% 0}
+    100%{filter:hue-rotate(360deg)}
+  }
+
 
 @media (min-width: 60rem) {
     .home-hero {
@@ -265,7 +296,7 @@ nav a:focus
     }
     
     .home-about {
-        background-image:url(img/who-we-are.jpg);
+        background-image:url(img/bgpic2.jpg);
         background-repeat:no-repeat;
         padding-left: 5em;
         padding-bottom:10em;
@@ -299,10 +330,7 @@ nav a:focus
 .port-item {
     margin:0;
     position:relative;
-    
     height: 22em;
-    /*width:616px;
-    height:406px;*/
 }
 
 .port-item img {
@@ -322,6 +350,10 @@ nav a:focus
 
 .port-desc p {
     margin:1em;
+}
+
+.showDiv {
+	display: none;
 }
 
 @media (min-width: 37rem) {

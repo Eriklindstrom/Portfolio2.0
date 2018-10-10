@@ -6,14 +6,23 @@
         <title>Mr Lindstrom</title>
         <link href = "style.css" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="scripts.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+		
+		<!--Fancy box stuff-->
+		
+		<link rel="stylesheet" type="text/css" href="fancybox-master/dist/jquery.fancybox.css">
+		<script src="fancybox-master/dist/jquery.fancybox.js"></script>
+		
+		<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>-->
+
         <link rel = "icon" href="img/icon.png">
     </head>
     
     <body>
-    
+		
         <header>
-        <img src = "img/logo.png" alt ="Logo" class = "logo">
+			<!--<a href=""><img src = "img/profile.jpg" alt ="Logo" class = "logo"></a>-->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -22,7 +31,6 @@
                 </ul>
             </nav>
         </header>
-        
         <section class = "home-hero">
             <div class="container">
                 <h1 class="title">Making things look great
@@ -42,60 +50,70 @@
             </section>
         </div>
         
+		<!--
+		<a data-fancybox="gallery" href="img/Webp.net-resizeimage.jpg"><img src="img/Webp.net-resizeimage.jpg"></a>
+		<a data-fancybox="gallery" href="img/Webp.net-resizeimage%20(1).jpg"><img src="img/Webp.net-resizeimage%20(1).jpg"></a>
+		-->
+		
         <section class="portfolio" id="portfolio">
             <h1>Some of my work</h1>
-            
             <!--Porfolio item 01-->
             <figure class="port-item">
-                <img src="img/Webp.net-resizeimage.jpg" alt="BeerBuds">
+                <img src="img/KTHCourtYardRender.jpg" alt="BeerBuds">
                 <figcaption class="port-desc">
-                    <p>Project Title</p>
-                    <a href="" class="button button-accent button-small">See more</a>
+                    <p>KTH Courtyard Render</p>
+					<!--<a data-fancybox="gallery" href="img/Webp.net-resizeimage.jpg" class="button button-accent button-small" id="Proj1" onmousedown="showDiv(this.id)" onmouseup="showDiv(this.id)">See more</a>-->
+					<a data-fancybox="gallery" data-caption="My caption" href="img/KTHCourtYardRender.jpg" class="button button-accent button-small">See more</a>
                 </figcaption>
             </figure>
             
             <!--Porfolio item 02-->
             <figure class="port-item">
-                <img src="img/Webp.net-resizeimage%20(1).jpg" alt="KTH render">
+                <img src="img/BeerBuds.jpg" alt="KTH render">
                 <figcaption class="port-desc">
-                    <p>Project Title</p>
-                    <a href="" class="button button-accent button-small">See more</a>
+                    <p>BeerBuds</p>
+                    <a data-fancybox="gallery" href="img/BeerBuds.jpg" class="button button-accent button-small"
+					   data-caption="BeerBuds, 2017<br>A project for our mobile development course where the goal was to create any mobile-fitted application. Our creating was BeerBuds, a social app to find strangers to share a glass of beer with. My role was that of a full-stacker, wanted to learn more about the database Firebase, and still work on the design of the app. With me, I had Felix Noren, Gustav Bergman and Anton Martinsson working on the projcet.<br>Github: <a target = '_blank' href='https://github.com/fnoren17/beerbuds'>https://github.com/fnoren17/beerbuds</a><br>Hosted version: <a target = '_blank' href='http://bergmangustav.se/DM2518/beerbuds/'>http://bergmangustav.se/DM2518/beerbuds/</a>">See more</a>
                 </figcaption>
             </figure>
             
             <!--Porfolio item 03-->
             <figure class="port-item">
-                <img src="img/Webp.net-resizeimage%20(2).png" alt="UniVRse">
+                <img src="img/UniVRse.png" alt="UniVRse">
                 <figcaption class="port-desc">
-                    <p>Project Title</p>
-                    <a href="" class="button button-accent button-small">See more</a>
+                    <p>UniVRse</p>
+                    <a data-fancybox="gallery" href="img/UniVRse.png" class="button button-accent button-small"
+					   data-caption="UniVRse, 2017 <br>A project made in Unity with VR support. We evaluated whether controller-based steering or head movement-based steering was superious in regards to efficiency and effectiveness. We found that using the head to steer was better in all regards, and caused less motion sickness than that of a controller.<br> Working web-based version (laggy): <a target = '_blank' href='multimodal.html'>Multimodal project</a><br>Presentation video: <a target = '_blank' href='https://youtu.be/JBwnQ7EBQ7g'>https://youtu.be/JBwnQ7EBQ7g</a>">See more</a>
                 </figcaption>
             </figure>
             
             <!--Porfolio item 04-->
             <figure class="port-item">
-                <img src="img/Webp.net-resizeimage%20(3).png" alt="MissionEmission">
+                <img src="img/MissionEmission.png" alt="MissionEmission">
                 <figcaption class="port-desc">
-                    <p>Project Title</p>
-                    <a href="" class="button button-accent button-small">See more</a>
+                    <p>Mission Emission</p>
+                    <a data-fancybox="gallery" href="img/MissionEmission.png" class="button button-accent button-small" 
+					   data-caption="Mission Emission, 2018 <br>Our project in the Information Visualization course given at KTH. Our group took an offer from SEI to develop a prototype for visualizing emissions via nautical export from brazil. I had the role of front-end developer and UX-designer. Click the live version for more info.<br>Github: <a target = '_blank' href='https://github.com/fnoren17/infovis18'>https://github.com/fnoren17/infovis18</a><br>GithubIO: <a target = '_blank' href='https://fnoren17.github.io/infovis18/'>https://fnoren17.github.io/infovis18/</a>">See more</a>
                 </figcaption>
             </figure>
             
             <!--Porfolio item 05-->
             <figure class="port-item">
-                <img src="img/Webp.net-resizeimage%20(4).png" alt="portfolio item">
+                <img src="img/SpotifyGroups.png" alt="portfolio item">
                 <figcaption class="port-desc">
-                    <p>Project Title</p>
-                    <a href="" class="button button-accent button-small">See more</a>
+                    <p>Spotify Groups</p>
+                    <a data-fancybox="gallery" href="img/SpotifyGroups.png" class="button button-accent button-small"
+					   data-caption="Spotify Groups, 2017 <br>This project was a bit different, as we were tasked with creating a high-fidelity prototype, not a real product. We worked according to the double diamond scheme and developed our idea into more and more fleshed out ideas. Our final product was Spotify Groups, an addition that meant that you could start groups and parties to ease sharing music with your friends, with little hassle. The prototype was created using Justinmind. <br>Github: <a target = '_blank' href='https://github.com/fnoren17/Spotify-Groups'>https://github.com/fnoren17/Spotify-Groups</a><br>Presentation video: <a target = '_blank' href='https://youtu.be/-G6FcEKLjrA'>https://youtu.be/-G6FcEKLjrA</a>">See more</a>
                 </figcaption>
             </figure>
             
             <!--Porfolio item 06-->
             <figure class="port-item">
-                <img src="img/Webp.net-resizeimage%20(5).png" alt="portfolio item">
+                <img src="img/TrumpOrDump.png" alt="portfolio item">
                 <figcaption class="port-desc">
-                    <p>Project Title</p>
-                    <a href="" class="button button-accent button-small">See more</a>
+                    <p>TrumpOrDump</p>
+                    <a data-fancybox="gallery" href="img/TrumpOrDump.png" class="button button-accent button-small"
+					   data-caption="Trump or Dump, 2017 <br> A project using HTML and JS, we created a markov chain and made a game where the goal is to guess if a tweet by Donald Trump was real, or a creation of our markov chain. The project was created with my colleagues Felix Noren and Per Jaakonantti. My role in the project was to code the front-end.<br>Github: <a target = '_blank' href='https://github.com/fnoren17/trumpordump'>https://github.com/fnoren17/trumpordump</a><br>GithubIO: <a target = '_blank' href='https://fnoren17.github.io/trumpordump/'>https://fnoren17.github.io/trumpordump/</a>">See more</a>
                 </figcaption>
             </figure>
         </section>
@@ -105,7 +123,7 @@
                 <h1 class="title title-cta">Like what you see?
                     <span>Then what are you waiting for?</span>
                 </h1>
-                <a href="" class="button button-dark">Hire me</a>
+                <a href="" class="button button-dark">Contact me</a>
             </div>
         </section>
         
@@ -115,6 +133,8 @@
                     <p>
                         Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum congue dictum risus vitae iaculis. Curabitur non mi sollicitudin, tincidunt lorem et, ullamcorper erat. Quisque fermentum condimentum maximus. Proin finibus aliquet lectus, eget finibus sem.
                     </p>
+					<a href=""><img src="img/github-logo.png"></a>
+					<a href=""><img src="img/linkedin-button.png"></a>
                 </div>
                 <div class="col-1">
                     <ul class="unstyled-list">
@@ -149,7 +169,6 @@
 </html>
 
 <script>
-
 var $root = $('html, body');
 
 $('a[href^="#"]').click(function() {
@@ -163,4 +182,7 @@ $('a[href^="#"]').click(function() {
 
     return false;
 });
+	
+	$.fancybox.defaults.animationEffect = "fade";
+	$.fancybox.defaults.transitionEffect = "circular";
 </script>
